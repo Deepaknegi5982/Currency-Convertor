@@ -4,6 +4,10 @@ A modern and responsive Currency Converter built using **HTML, CSS, and JavaScri
 This project allows users to convert one currency into another using real-time exchange rates fetched from a public currency API.
 
 ---
+## 🚀 Live Demo:- 
+https://deepak-currencyconvertor.netlify.app/
+
+---
 
 ## 🚀 Features
 
