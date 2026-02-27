@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+   
+    background: linear-gradient(135deg, #e0f7fa, #f1f8e9);
+}
+
+
+
+ .container {
+    background: #ffffff;
+    padding: 2.2rem;
+    border-radius: 1.5rem;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.container h2{
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+     font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 1.8rem;
+}
+
+form input, 
+form select, 
+form button{
+    border: none;
+    width: 100%;
+    outline: none;
+    border-radius: 0.5rem;
+}
+
+form input{
+    font-size: 1.5rem;
+    padding-left: 0.5rem;
+    height: 3rem;
+    border: 1px solid lightgray;
+}
+
+.amount p,
+.from p,
+.to p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #555;
+}
+
+.dropdown{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    justify-content: space-between;
+}
+
+
+.dropdown i {
+    background: #f1f1f1;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dropdown i:hover {
+    background: #e0e0e0;
+    transform: rotate(180deg);
+}
+
+.select-container img{
+    max-width: 2.6rem;
+}
+
+
+.select-container {
+    background: #f9fafc;
+    padding: 8px 12px;
+    border-radius: 0.8rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.select-container select{
+    font-size: 1.2rem;
+    width: auto;
+    flex: 1;
+    background: transparent;
+}
+
+ .msg {
+    margin: 1.8rem 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    color: #222;
+    transition: 0.3s ease;
+}
+
+form button {
+    font-size: 1.2rem;
+    background: linear-gradient(135deg, #ff6fd8, #3813c2);
+    color: #fff;
+    height: 3.2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-top: 2rem;
+    box-shadow: 0 10px 25px rgba(56, 19, 194, 0.3);
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(56, 19, 194, 0.4);
+}
+
+form{
+    margin-top: 2rem;
+}
+/* ===== PREMIUM MOBILE DESIGN ===== */
+@media (max-width: 768px) {
+
+    body {
+        padding: 1rem;
+        background: linear-gradient(135deg, #e6f9d5, #f8f9ff);
+    }
+
+    .container {
+        padding: 1.5rem;
+        border-radius: 1.5rem;
+    }
+
+    .container h2 {
+        font-size: 1.7rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .amount p {
+        font-size: 1rem;
+        margin-bottom: 0.4rem;
+    }
+
+    form input {
+        height: 3rem;
+        font-size: 1.2rem;
+        border-radius: 0.8rem;
+        border: 1px solid #ddd;
+        
+    }
+
+    .dropdown {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    .dropdown i {
+        transform: rotate(90deg);
+        font-size: 1.8rem;
+        margin: 0;
+        align-self: center;
+        color: #333;
+    }
+
+    .from, .to {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;    }
+
+    .select-container {
+        width: 100%;
+        max-width: 300px;
+        padding: 8px 12px;
+        border-radius: 0.8rem;
+        background: white;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+
+    .select-container img {
+        width: 32px;
+    }
+
+    .select-container select {
+        font-size: 1rem;
+    }
+
+    .msg {
+        font-size: 1.2rem;
+        text-align: center;
+        margin: 2rem 0 1rem 0;
+        font-weight: 600;
+    }
+
+    form button {
+        height: 3.2rem;
+        font-size: 1.2rem;
+        border-radius: 1rem;
+        background: linear-gradient(135deg, #ff6fd8, #3813c2);
+        box-shadow: 0 10px 25px rgba(255, 111, 216, 0.4);
+        transition: all 0.3s ease;
+    }
+
+    form button:active {
+        transform: scale(0.97);
+    }
+}
+
+/* ===== TABLET VIEW ===== */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        max-width: 500px;
+    }
+}
